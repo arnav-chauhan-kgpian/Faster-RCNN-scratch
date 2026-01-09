@@ -1,0 +1,43 @@
+dataset_params:
+  # Kaggle input paths are usually read-only
+  # Ensure you add the 'PASCAL VOC 2012' dataset to your notebook
+  im_train_path: '/kaggle/input/pascal-voc-2012-dataset/VOC2012_train_val/VOC2012_train_val/JPEGImages'
+  ann_train_path: '/kaggle/input/pascal-voc-2012-dataset/VOC2012_train_val/VOC2012_train_val/Annotations'
+  im_test_path: '/kaggle/input/pascal-voc-2012-dataset/VOC2012_test/VOC2012_test/JPEGImages' # Using same for demo if test set isn't separate
+  ann_test_path: '/kaggle/input/pascal-voc-2012-dataset/VOC2012_test/VOC2012_test/Annotations'
+  num_classes : 21
+
+model_params:
+  im_channels : 3
+  aspect_ratios: [0.5, 1, 2]
+  scales: [128, 256, 512]
+  min_im_size : 600
+  max_im_size : 1000
+  backbone_out_channels : 512
+  fc_inner_dim : 1024
+  rpn_bg_threshold : 0.3
+  rpn_fg_threshold : 0.7
+  rpn_nms_threshold : 0.7
+  rpn_train_prenms_topk : 12000
+  rpn_test_prenms_topk : 6000
+  rpn_train_topk : 2000
+  rpn_test_topk : 300
+  rpn_batch_size : 256
+  rpn_pos_fraction : 0.5
+  roi_iou_threshold : 0.5
+  roi_low_bg_iou : 0.0 
+  roi_pool_size : 7
+  roi_nms_threshold : 0.3
+  roi_topk_detections : 100
+  roi_score_threshold : 0.05
+  roi_batch_size : 128
+  roi_pos_fraction : 0.25
+
+train_params:
+  task_name: 'voc_scratch_kaggle'
+  seed : 1111
+  acc_steps : 4 # Keep high for stability
+  num_epochs: 30
+  lr_steps : [20, 25]
+  lr: 0.0001 # Safer for scratch training
+  ckpt_name: 'faster_rcnn_voc_scratch.pth'
