@@ -1,7 +1,3 @@
-Here is the **GitHub README.md** based on your project details, architecture, and our debugging process. It highlights the "From Scratch" nature of the work and focuses on the results and inference.
-
----
-
 # Custom Faster R-CNN: Object Detection from Scratch
 
 A complete, custom implementation of the **Faster R-CNN** object detection architecture, built and trained entirely from scratch (without pre-trained ImageNet weights) on the PASCAL VOC dataset.
