@@ -63,7 +63,7 @@ To successfully train deep object detection networks without pre-trained weights
 
 1. **Clone the repository:**
 ```bash
-git clone https://github.com/yourusername/custom-faster-rcnn.git
+git clone https://github.com/arnav-chauhan-kgpian/Faster-RCNN-scratch.git
 cd custom-faster-rcnn
 
 ```
@@ -100,11 +100,11 @@ To run the object detector on a video file:
 python tools/video_demo.py \
     --config config/voc.yaml \
     --video_path path/to/your/video.mp4 \
-    --threshold 0.7
+    --threshold 0.9
 
 ```
 
-* **`--threshold`**: Confidence threshold (default: 0.7). Lower this to 0.3-0.5 if detections are sparse.
+* **`--threshold`**: Confidence threshold (default: 0.9). Lower this to 0.3-0.5 if detections are sparse.
 * **Output**: The processed video will be saved as `output_demo.avi`.
 
 ---
