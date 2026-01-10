@@ -4,7 +4,7 @@ A complete, custom implementation of the **Faster R-CNN** object detection archi
 
 ### 🎥 Real-Time Detection Demo
 
-*(Note: Replace `results/output_detection.gif` with your actual GIF path)*
+*(Note: Go to processed_one_by_one_person_detection.mp4 in the repository*
 
 ---
 
@@ -51,7 +51,7 @@ To successfully train deep object detection networks without pre-trained weights
 
 | Metric | Result |
 | --- | --- |
-| **mAP (Mean Average Precision)** | **[INSERT mAP HERE]** |
+| **mAP (Mean Average Precision)** | **0.17** |
 | **Inference Speed** | **16.5** FPS (on GPU) |
 | **Model Size** | **167.64** MB |
 
