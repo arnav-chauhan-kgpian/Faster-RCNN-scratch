@@ -2,9 +2,11 @@
 
 A complete, custom implementation of the **Faster R-CNN** object detection architecture, built and trained entirely from scratch (without pre-trained ImageNet weights) on the PASCAL VOC dataset.
 
+*(Note: For a detailed project report, go to Project Report_ Custom Object Detection Pipeline.pdf in the repository)*
+
 ### 🎥 Real-Time Detection Demo
 
-*(Note: Go to processed_one_by_one_person_detection.mp4 in the repository*
+*(Note: Go to processed_one_by_one_person_detection.mp4 in the repository)*
 
 ---
 
